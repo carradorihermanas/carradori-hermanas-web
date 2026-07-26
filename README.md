@@ -1,12 +1,26 @@
 # Carradori Hermanas — Sitio web
 
-Primera versión profesional del sitio institucional.
+Versión actualizada con la identidad visual definida:
 
-## Antes de publicar
-- Reemplazar `5491100000000` por el WhatsApp real.
-- Reemplazar enlaces de redes.
-- Sustituir propiedades ilustrativas por fichas reales.
-- Conectar el formulario a un servicio de envío.
+- Monograma CH con techo.
+- Azul, bordó, dorado y crema.
+- Slogan: “Dos miradas, un mismo propósito”.
+- Portadas y recursos gráficos creados para Carradori Hermanas.
+- Diseño adaptable a computadora y celular.
 
-## GitHub Pages
-Settings → Pages → Deploy from a branch → `main` → `/ (root)` → Save.
+## Datos pendientes
+
+- Número real de WhatsApp.
+- Teléfonos.
+- Enlaces definitivos de Instagram, Facebook, YouTube y LinkedIn.
+- Conexión real del formulario.
+- Fotografías de las integrantes para la sección Nosotras.
+- Propiedades reales del Sistema Carradori.
+
+## Publicación
+
+Copiar todos los archivos de esta carpeta dentro del repositorio local, reemplazar los existentes y luego:
+
+1. Commit en GitHub Desktop.
+2. Push origin.
+3. Actualizar GitHub Pages con Ctrl + F5.
