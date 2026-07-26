@@ -35,22 +35,19 @@ nav{display:flex;gap:28px;align-items:center;font-weight:700;font-size:.91rem}
 nav a:hover{color:var(--bordo)}
 nav .boton-nav{background:var(--azul);color:white;padding:11px 18px;border-radius:999px}
 .menu{display:none;border:0;background:none;font-size:1.7rem;color:var(--azul)}
-.hero{position:relative;min-height:calc(100vh - 82px);display:grid;align-items:center;overflow:hidden;background:
-radial-gradient(circle at 78% 25%,rgba(201,150,55,.28),transparent 22%),
-linear-gradient(120deg,var(--azul2) 0%,var(--azul) 58%,#174b70 100%)}
-.hero:before{content:"";position:absolute;width:780px;height:360px;border:4px solid rgba(201,150,55,.55);border-left:0;border-bottom:0;transform:rotate(-8deg);right:-130px;top:110px;border-radius:0 240px 0 0}
-.hero:after{content:"";position:absolute;width:520px;height:220px;border-top:4px solid rgba(201,150,55,.7);transform:rotate(20deg);right:20px;top:310px}
-.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;padding:80px 0}
+.hero{position:relative;min-height:calc(100vh - 82px);display:grid;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(3,31,56,.96) 0%,rgba(3,31,56,.82) 30%,rgba(3,31,56,.28) 58%,rgba(3,31,56,.05) 100%),url("fachada-buenos-aires.jpg") center/cover no-repeat}
+.hero:before,.hero:after{display:none}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,660px) 1fr;gap:70px;align-items:center;padding:80px 0}
 .etiqueta{text-transform:uppercase;letter-spacing:.26em;font-size:.73rem;font-weight:800;color:#e4bd73;margin:0 0 18px}
 h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08}
-h1{font-size:clamp(3.8rem,7vw,7rem);color:white;font-weight:500;letter-spacing:-.045em;margin:0 0 25px}
+h1{font-size:clamp(3.4rem,6vw,5.9rem);color:white;font-weight:500;letter-spacing:-.045em;margin:0 0 25px}
 h1 em{display:block;color:#e0b66c;font-weight:400}
 .hero p{color:#e6edf2;font-size:1.15rem;max-width:620px}
 .acciones{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
 .btn{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:0 24px;border-radius:999px;font-weight:800;border:1px solid transparent}
 .btn-dorado{background:var(--dorado);color:var(--azul2)}
 .btn-claro{border-color:rgba(255,255,255,.65);color:white}
-.logo-hero{background:rgba(248,238,223,.94);padding:22px;border-radius:30px;box-shadow:0 25px 75px rgba(0,0,0,.22);transform:rotate(1deg)}
+.logo-hero{display:none}
 .logo-hero img{border-radius:18px}
 .franja{background:var(--bordo);border-top:3px solid var(--dorado);border-bottom:3px solid var(--dorado);color:white}
 .valores{min-height:64px;display:flex;justify-content:center;align-items:center;gap:26px;text-transform:uppercase;letter-spacing:.17em;font-size:.75rem}
