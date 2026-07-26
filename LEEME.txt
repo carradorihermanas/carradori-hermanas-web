@@ -1,0 +1,15 @@
+WEB CARRADORI HERMANAS — VERSIÓN DEFINITIVA
+
+Esta carpeta contiene solamente dos archivos:
+1. index.html
+2. logo-carradori.png
+
+Para publicarla:
+- Copiar ambos archivos.
+- Pegarlos en la carpeta principal del repositorio carradori-hermanas-web.
+- Reemplazar index.html.
+- Mantener las carpetas viejas si aparecen: esta versión no depende de ellas.
+- En GitHub Desktop hacer Commit y luego Push origin.
+
+IMPORTANTE:
+El WhatsApp, las redes y el formulario todavía no tienen los datos definitivos.

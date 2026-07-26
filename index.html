@@ -1,242 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carradori Hermanas | Asesoría inmobiliaria</title>
-  <meta name="description" content="Carradori Hermanas. Dos miradas, un mismo propósito. Asesoría inmobiliaria profesional, cercana y transparente.">
-  <meta name="theme-color" content="#072f52">
-  <meta property="og:title" content="Carradori Hermanas">
-  <meta property="og:description" content="Dos miradas, un mismo propósito.">
-  <meta property="og:type" content="website">
-  <link rel="icon" href="assets/img/monograma.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script defer src="assets/js/app.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carradori Hermanas | Asesoría inmobiliaria</title>
+<meta name="description" content="Carradori Hermanas. Dos miradas, un mismo propósito. Asesoría inmobiliaria para comprar, vender, invertir y tasar.">
+<link rel="icon" href="logo-carradori.png">
+<style>
+:root{
+  --azul:#062f53;
+  --azul2:#031f38;
+  --bordo:#8f111d;
+  --dorado:#c99637;
+  --crema:#f8eedf;
+  --crema2:#efe0ca;
+  --blanco:#fffdf8;
+  --texto:#183047;
+  --gris:#6f6a64;
+  --sombra:0 18px 55px rgba(4,31,56,.14);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--crema);color:var(--texto);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.contenedor{width:min(1180px,calc(100% - 36px));margin:auto}
+header{position:sticky;top:0;z-index:30;background:rgba(248,238,223,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,150,55,.35)}
+.barra{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.marca{display:flex;align-items:center;gap:13px}
+.marca img{width:58px;height:58px;object-fit:cover;border-radius:50%;border:1px solid var(--dorado)}
+.marca b{font-family:Georgia,serif;text-transform:uppercase;letter-spacing:.09em;color:var(--azul);display:block}
+.marca small{display:block;color:var(--bordo);letter-spacing:.18em;text-transform:uppercase;font-size:.58rem;margin-top:3px}
+nav{display:flex;gap:28px;align-items:center;font-weight:700;font-size:.91rem}
+nav a:hover{color:var(--bordo)}
+nav .boton-nav{background:var(--azul);color:white;padding:11px 18px;border-radius:999px}
+.menu{display:none;border:0;background:none;font-size:1.7rem;color:var(--azul)}
+.hero{position:relative;min-height:calc(100vh - 82px);display:grid;align-items:center;overflow:hidden;background:
+radial-gradient(circle at 78% 25%,rgba(201,150,55,.28),transparent 22%),
+linear-gradient(120deg,var(--azul2) 0%,var(--azul) 58%,#174b70 100%)}
+.hero:before{content:"";position:absolute;width:780px;height:360px;border:4px solid rgba(201,150,55,.55);border-left:0;border-bottom:0;transform:rotate(-8deg);right:-130px;top:110px;border-radius:0 240px 0 0}
+.hero:after{content:"";position:absolute;width:520px;height:220px;border-top:4px solid rgba(201,150,55,.7);transform:rotate(20deg);right:20px;top:310px}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center;padding:80px 0}
+.etiqueta{text-transform:uppercase;letter-spacing:.26em;font-size:.73rem;font-weight:800;color:#e4bd73;margin:0 0 18px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08}
+h1{font-size:clamp(3.8rem,7vw,7rem);color:white;font-weight:500;letter-spacing:-.045em;margin:0 0 25px}
+h1 em{display:block;color:#e0b66c;font-weight:400}
+.hero p{color:#e6edf2;font-size:1.15rem;max-width:620px}
+.acciones{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;min-height:50px;align-items:center;justify-content:center;padding:0 24px;border-radius:999px;font-weight:800;border:1px solid transparent}
+.btn-dorado{background:var(--dorado);color:var(--azul2)}
+.btn-claro{border-color:rgba(255,255,255,.65);color:white}
+.logo-hero{background:rgba(248,238,223,.94);padding:22px;border-radius:30px;box-shadow:0 25px 75px rgba(0,0,0,.22);transform:rotate(1deg)}
+.logo-hero img{border-radius:18px}
+.franja{background:var(--bordo);border-top:3px solid var(--dorado);border-bottom:3px solid var(--dorado);color:white}
+.valores{min-height:64px;display:flex;justify-content:center;align-items:center;gap:26px;text-transform:uppercase;letter-spacing:.17em;font-size:.75rem}
+.valores i{width:5px;height:5px;background:var(--dorado);border-radius:50%}
+.seccion{padding:100px 0}
+.presentacion{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}
+.mini-logo{background:var(--crema2);padding:24px;border:1px solid rgba(201,150,55,.4);border-radius:28px;box-shadow:var(--sombra)}
+.mini-logo img{border-radius:18px}
+.subtitulo{text-transform:uppercase;letter-spacing:.24em;color:var(--bordo);font-size:.72rem;font-weight:800}
+h2{font-size:clamp(2.5rem,4.7vw,4.4rem);font-weight:500;letter-spacing:-.035em;margin:12px 0 25px}
+.texto-grande{font-size:1.28rem;color:#3c4c58}
+.firma{font-family:cursive;color:var(--bordo);font-size:1.8rem;border-top:1px solid #d6b77f;padding-top:22px;margin-top:25px}
+.oscuro{background:var(--azul);color:white}
+.oscuro h2{color:white}
+.servicios{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.tarjeta-servicio{border:1px solid rgba(224,182,108,.38);background:rgba(255,255,255,.045);padding:28px;border-radius:22px;min-height:250px}
+.tarjeta-servicio span{color:#e0b66c;font-family:Georgia,serif;font-size:2rem}
+.tarjeta-servicio h3{font-size:1.45rem;margin:38px 0 10px}
+.tarjeta-servicio p{color:#cbd5dd;font-size:.93rem}
+.cabecera-seccion{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:45px}
+.enlace{color:var(--bordo);font-weight:800}
+.propiedades{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.propiedad{background:var(--blanco);border:1px solid rgba(201,150,55,.33);border-radius:22px;overflow:hidden;box-shadow:0 10px 30px rgba(4,31,56,.07)}
+.foto{height:270px;position:relative;overflow:hidden;background:
+linear-gradient(140deg,var(--crema2) 0 42%,#ccb394 42% 62%,#f4eadc 62%)}
+.foto.casa{background:linear-gradient(140deg,#e0e6dd 0 42%,#8da17f 42% 62%,#f2eee5 62%)}
+.foto.lote{background:linear-gradient(140deg,#ded2bc 0 42%,#9f8b6c 42% 62%,#eee6d9 62%)}
+.foto:before{content:"⌂";position:absolute;inset:0;display:grid;place-items:center;font-size:6rem;color:rgba(255,255,255,.82)}
+.foto span{position:absolute;top:16px;left:16px;background:white;border-radius:999px;padding:8px 13px;font-size:.76rem;font-weight:800}
+.info{padding:25px}
+.info small{color:var(--bordo);text-transform:uppercase;letter-spacing:.15em}
+.info h3{font-size:1.45rem;margin:10px 0}
+.info p{color:var(--gris)}
+.info a{color:var(--bordo);font-weight:800}
+.aviso{text-align:center;color:var(--gris);font-size:.86rem;margin-top:24px}
+.zonas{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.chips{display:flex;gap:12px;flex-wrap:wrap}
+.chips span{padding:12px 18px;border:1px solid var(--dorado);border-radius:999px;background:rgba(255,255,255,.45)}
+.contacto{background:var(--azul2);color:white;border-top:4px solid var(--dorado)}
+.contacto-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}
+.contacto p{color:#c9d4dc}
+.datos{display:grid;border-top:1px solid rgba(255,255,255,.18);margin-top:28px}
+.datos a{display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.18);font-weight:700}
+form{background:var(--crema);color:var(--texto);padding:32px;border-radius:24px}
+label{display:grid;gap:7px;font-weight:800;font-size:.88rem;margin-bottom:16px}
+input,select,textarea{width:100%;border:1px solid #d8bf90;background:#fffaf3;border-radius:11px;padding:13px 14px;font:inherit}
+button{cursor:pointer}
+.estado{color:var(--bordo);font-size:.86rem}
+footer{background:#021728;color:white;padding:60px 0 20px}
+.pie{display:grid;grid-template-columns:.75fr .55fr 1.4fr;gap:55px}
+.pie img{max-width:235px;border-radius:18px}
+.pie h3{color:#e0b66c;text-transform:uppercase;letter-spacing:.16em;font-size:.83rem}
+.pie a{display:block;margin-bottom:8px}
+.pie p{color:#9fb0bd;font-size:.84rem}
+.final{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:19px;margin-top:38px;color:#91a2af;font-size:.8rem}
+.whatsapp{position:fixed;right:22px;bottom:22px;z-index:20;background:#2d6a4f;color:white;padding:13px 18px;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+@media(max-width:950px){
+  nav{position:fixed;inset:82px 0 auto;background:var(--crema);padding:28px;display:none;flex-direction:column;border-bottom:2px solid var(--dorado)}
+  nav.abierto{display:flex}.menu{display:block}
+  .hero-grid,.presentacion,.zonas,.contacto-grid{grid-template-columns:1fr}
+  .logo-hero{max-width:520px;margin:auto}
+  .servicios{grid-template-columns:1fr 1fr}
+  .propiedades{grid-template-columns:1fr 1fr}
+  .pie{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+  .barra{height:72px}.marca img{width:48px;height:48px}.marca b{font-size:.79rem}.marca small{font-size:.48rem}
+  nav{inset:72px 0 auto}.hero-grid{padding:65px 0}.logo-hero{display:none}
+  h1{font-size:clamp(3.2rem,17vw,5rem)}.seccion{padding:72px 0}
+  .valores{gap:11px;font-size:.59rem;letter-spacing:.09em}
+  .servicios,.propiedades,.pie{grid-template-columns:1fr}
+  .cabecera-seccion{display:block}.final{display:block}
+}
+</style>
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+  <div class="contenedor barra">
+    <a class="marca" href="#inicio">
+      <img src="logo-carradori.png" alt="">
+      <span><b>Carradori Hermanas</b><small>Asesoría inmobiliaria</small></span>
+    </a>
+    <button class="menu" aria-label="Abrir menú">☰</button>
+    <nav>
+      <a href="#nosotras">Nosotras</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#zonas">Zonas</a>
+      <a class="boton-nav" href="#contacto">Contactanos</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="site-header" id="inicio">
-    <div class="container nav-wrap">
-      <a class="brand" href="#inicio" aria-label="Carradori Hermanas, inicio">
-        <img src="assets/img/monograma.png" alt="">
-        <span>
-          <strong>Carradori Hermanas</strong>
-          <small>Asesoría inmobiliaria</small>
-        </span>
-      </a>
-
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span></span><span></span><span></span>
-        <b class="sr-only">Abrir menú</b>
-      </button>
-
-      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#nosotras">Nosotras</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#propiedades">Propiedades</a>
-        <a href="#zonas">Zonas</a>
-        <a href="#contacto" class="nav-cta">Contactanos</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="contenido">
-    <section class="hero">
-      <div class="hero-image" aria-hidden="true"></div>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content reveal">
-        <p class="eyebrow light">Carradori Hermanas</p>
-        <h1>Dos miradas.<br><em>Un mismo propósito.</em></h1>
-        <p>
-          Acompañamiento inmobiliario profesional, cercano y transparente
-          para comprar, vender, invertir o tasar.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-gold" href="#propiedades">Ver propiedades</a>
-          <a class="button button-ghost" href="#contacto">Hablar con nosotras</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="brand-strip">
-      <div class="container brand-values">
-        <span>Compra</span><i></i>
-        <span>Venta</span><i></i>
-        <span>Inversiones</span><i></i>
-        <span>Tasaciones</span>
-      </div>
-    </section>
-
-    <section class="section" id="nosotras">
-      <div class="container about-grid">
-        <div class="about-logo reveal">
-          <img src="assets/img/logo-principal.png" alt="Logo de Carradori Hermanas">
-        </div>
-        <div class="about-copy reveal">
-          <p class="eyebrow">Nosotras</p>
-          <h2>Una forma cercana y profesional de acompañar decisiones importantes.</h2>
-          <p class="lead">
-            Somos Carradori Hermanas. Trabajamos combinando dos miradas,
-            una estrategia compartida y un compromiso real con cada persona.
-          </p>
-          <p>
-            Creemos que una operación inmobiliaria necesita información clara,
-            criterio profesional y presencia durante todo el proceso.
-          </p>
-          <div class="signature">Dos miradas, un mismo propósito.</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-blue" id="servicios">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow light">Servicios</p>
-          <h2>Una estrategia para cada objetivo.</h2>
-        </div>
-        <div class="services-grid">
-          <article class="service-card reveal"><span>01</span><h3>Compra</h3><p>Selección de alternativas y acompañamiento para decidir con seguridad.</p></article>
-          <article class="service-card reveal"><span>02</span><h3>Venta</h3><p>Precio, presentación, difusión y seguimiento de cada consulta.</p></article>
-          <article class="service-card reveal"><span>03</span><h3>Inversiones</h3><p>Análisis de oportunidades según objetivos, zona y proyección.</p></article>
-          <article class="service-card reveal"><span>04</span><h3>Tasaciones</h3><p>Una evaluación profesional para definir el valor y la estrategia correctos.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="propiedades">
-      <div class="container">
-        <div class="section-heading heading-row reveal">
-          <div>
-            <p class="eyebrow">Propiedades</p>
-            <h2>Oportunidades seleccionadas.</h2>
-          </div>
-          <a href="#contacto" class="text-link">Consultar disponibilidad →</a>
-        </div>
-
-        <div class="properties-grid">
-          <article class="property-card reveal">
-            <div class="property-photo property-one"><span>Departamento</span></div>
-            <div class="property-info">
-              <small>Ciudad de Buenos Aires</small>
-              <h3>Propiedad destacada</h3>
-              <p>La ficha real se conectará con el Sistema Carradori.</p>
-              <a href="#contacto">Solicitar información</a>
-            </div>
-          </article>
-          <article class="property-card reveal">
-            <div class="property-photo property-two"><span>Casa</span></div>
-            <div class="property-info">
-              <small>Zona Sur</small>
-              <h3>Propiedad destacada</h3>
-              <p>La ficha real se conectará con el Sistema Carradori.</p>
-              <a href="#contacto">Solicitar información</a>
-            </div>
-          </article>
-          <article class="property-card reveal">
-            <div class="property-photo property-three"><span>Lote</span></div>
-            <div class="property-info">
-              <small>Barrios privados</small>
-              <h3>Propiedad destacada</h3>
-              <p>La ficha real se conectará con el Sistema Carradori.</p>
-              <a href="#contacto">Solicitar información</a>
-            </div>
-          </article>
-        </div>
-        <p class="temporary-note reveal">
-          Esta sección queda visualmente preparada; luego reemplazaremos los ejemplos por propiedades reales.
-        </p>
-      </div>
-    </section>
-
-    <section class="image-statement">
-      <div class="container statement-card reveal">
-        <div>
-          <p class="eyebrow light">Nuestra manera de trabajar</p>
-          <h2>Confianza y compromiso en cada paso.</h2>
-          <p>Escuchamos, planificamos, comunicamos y acompañamos hasta el cierre.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="zonas">
-      <div class="container zones-grid">
-        <div class="reveal">
-          <p class="eyebrow">Zonas</p>
-          <h2>Conocimiento local y atención personalizada.</h2>
-        </div>
-        <div class="zone-list reveal">
-          <span>CABA</span>
-          <span>Zona Norte</span>
-          <span>Zona Oeste</span>
-          <span>Zona Sur</span>
-          <span>Otras zonas a consulta</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contacto">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <p class="eyebrow light">Contacto</p>
-          <h2>Contanos qué necesitás.</h2>
-          <p>
-            Respondemos personalmente para conocer tu situación y orientarte
-            con los próximos pasos.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:contacto@hermanascarradori.com.ar">contacto@hermanascarradori.com.ar <span>→</span></a>
-            <a href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp <span>→</span></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram <span>→</span></a>
-          </div>
-          <small>El teléfono, WhatsApp y enlaces de redes continúan pendientes de confirmación.</small>
-        </div>
-
-        <form class="contact-form reveal" id="contact-form">
-          <label>Nombre<input type="text" name="nombre" required></label>
-          <label>Teléfono<input type="tel" name="telefono" required></label>
-          <label>Consulta
-            <select name="consulta" required>
-              <option value="">Elegir una opción</option>
-              <option>Quiero vender</option>
-              <option>Quiero comprar</option>
-              <option>Quiero invertir</option>
-              <option>Necesito una tasación</option>
-            </select>
-          </label>
-          <label>Mensaje<textarea rows="5" name="mensaje" required></textarea></label>
-          <button class="button button-gold" type="submit">Enviar consulta</button>
-          <p class="form-status" role="status"></p>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <img src="assets/img/logo-principal.png" alt="Carradori Hermanas">
-      <div>
-        <h3>Navegación</h3>
-        <a href="#nosotras">Nosotras</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#propiedades">Propiedades</a>
-        <a href="#contacto">Contacto</a>
-      </div>
-      <div>
-        <h3>Información legal</h3>
-        <p>
-          ZMZ Bienes Raíces S.R.L. – Martillera: Verónica Zaltzman.
-          C.U.C.I.C.B.A. Nº 8072 – C.M.C.P.D.J.M. Nº 3960.
-        </p>
-        <p>Oficina de RE/MAX Free. Cada oficina es de propiedad y gestión independiente.</p>
+<main>
+<section class="hero" id="inicio">
+  <div class="contenedor hero-grid">
+    <div>
+      <p class="etiqueta">Carradori Hermanas</p>
+      <h1>Dos miradas.<em>Un mismo propósito.</em></h1>
+      <p>Acompañamiento inmobiliario profesional, cercano y transparente para comprar, vender, invertir o tasar.</p>
+      <div class="acciones">
+        <a class="btn btn-dorado" href="#propiedades">Ver propiedades</a>
+        <a class="btn btn-claro" href="#contacto">Hablar con nosotras</a>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <span>© <span id="year"></span> Carradori Hermanas</span>
-      <a href="#inicio">Volver arriba ↑</a>
-    </div>
-  </footer>
+    <div class="logo-hero"><img src="logo-carradori.png" alt="Logo Carradori Hermanas con techo"></div>
+  </div>
+</section>
 
-  <a class="whatsapp-float" href="https://wa.me/5491100000000" target="_blank" rel="noopener">WhatsApp</a>
+<div class="franja"><div class="contenedor valores"><span>Compra</span><i></i><span>Venta</span><i></i><span>Inversiones</span><i></i><span>Tasaciones</span></div></div>
+
+<section class="seccion" id="nosotras">
+  <div class="contenedor presentacion">
+    <div class="mini-logo"><img src="logo-carradori.png" alt="Identidad Carradori Hermanas"></div>
+    <div>
+      <p class="subtitulo">Nosotras</p>
+      <h2>Una forma cercana y profesional de acompañar decisiones importantes.</h2>
+      <p class="texto-grande">Somos Carradori Hermanas. Trabajamos combinando dos miradas, una estrategia compartida y un compromiso real con cada persona.</p>
+      <p>Creemos que una operación inmobiliaria necesita información clara, criterio profesional y presencia durante todo el proceso.</p>
+      <div class="firma">Dos miradas, un mismo propósito.</div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion oscuro" id="servicios">
+  <div class="contenedor">
+    <p class="etiqueta">Servicios</p>
+    <h2>Una estrategia para cada objetivo.</h2>
+    <div class="servicios">
+      <article class="tarjeta-servicio"><span>01</span><h3>Compra</h3><p>Selección de alternativas y acompañamiento para decidir con seguridad.</p></article>
+      <article class="tarjeta-servicio"><span>02</span><h3>Venta</h3><p>Precio, presentación, difusión y seguimiento de cada consulta.</p></article>
+      <article class="tarjeta-servicio"><span>03</span><h3>Inversiones</h3><p>Análisis de oportunidades según objetivos, zona y proyección.</p></article>
+      <article class="tarjeta-servicio"><span>04</span><h3>Tasaciones</h3><p>Evaluación profesional para definir el valor y la estrategia correctos.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="propiedades">
+  <div class="contenedor">
+    <div class="cabecera-seccion">
+      <div><p class="subtitulo">Propiedades</p><h2>Oportunidades seleccionadas.</h2></div>
+      <a class="enlace" href="#contacto">Consultar disponibilidad →</a>
+    </div>
+    <div class="propiedades">
+      <article class="propiedad"><div class="foto"><span>Departamento</span></div><div class="info"><small>Ciudad de Buenos Aires</small><h3>Propiedad destacada</h3><p>La ficha real se conectará con el Sistema Carradori.</p><a href="#contacto">Solicitar información</a></div></article>
+      <article class="propiedad"><div class="foto casa"><span>Casa</span></div><div class="info"><small>Zona Sur</small><h3>Propiedad destacada</h3><p>La ficha real se conectará con el Sistema Carradori.</p><a href="#contacto">Solicitar información</a></div></article>
+      <article class="propiedad"><div class="foto lote"><span>Lote</span></div><div class="info"><small>Barrios privados</small><h3>Propiedad destacada</h3><p>La ficha real se conectará con el Sistema Carradori.</p><a href="#contacto">Solicitar información</a></div></article>
+    </div>
+    <p class="aviso">Esta sección queda preparada para mostrar automáticamente las propiedades del Sistema Carradori.</p>
+  </div>
+</section>
+
+<section class="seccion" id="zonas">
+  <div class="contenedor zonas">
+    <div><p class="subtitulo">Zonas</p><h2>Conocimiento local y atención personalizada.</h2></div>
+    <div class="chips"><span>CABA</span><span>Zona Norte</span><span>Zona Oeste</span><span>Zona Sur</span><span>Otras zonas a consulta</span></div>
+  </div>
+</section>
+
+<section class="seccion contacto" id="contacto">
+  <div class="contenedor contacto-grid">
+    <div>
+      <p class="etiqueta">Contacto</p>
+      <h2>Contanos qué necesitás.</h2>
+      <p>Respondemos personalmente para conocer tu situación y orientarte con los próximos pasos.</p>
+      <div class="datos">
+        <a href="mailto:contacto@hermanascarradori.com.ar">Correo <span>→</span></a>
+        <a href="#">WhatsApp <span>→</span></a>
+        <a href="#">Instagram <span>→</span></a>
+      </div>
+      <p><small>Los enlaces reales se completarán cuando estén confirmados.</small></p>
+    </div>
+    <form id="formulario">
+      <label>Nombre<input required></label>
+      <label>Teléfono<input type="tel" required></label>
+      <label>Consulta<select required><option value="">Elegir</option><option>Quiero vender</option><option>Quiero comprar</option><option>Quiero invertir</option><option>Necesito una tasación</option></select></label>
+      <label>Mensaje<textarea rows="5" required></textarea></label>
+      <button class="btn btn-dorado" type="submit">Enviar consulta</button>
+      <p class="estado"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="contenedor pie">
+    <img src="logo-carradori.png" alt="Carradori Hermanas">
+    <div><h3>Navegación</h3><a href="#nosotras">Nosotras</a><a href="#servicios">Servicios</a><a href="#propiedades">Propiedades</a><a href="#contacto">Contacto</a></div>
+    <div><h3>Información legal</h3><p>ZMZ Bienes Raíces S.R.L. – Martillera: Verónica Zaltzman. C.U.C.I.C.B.A. Nº 8072 – C.M.C.P.D.J.M. Nº 3960.</p><p>Oficina de RE/MAX Free. Cada oficina es de propiedad y gestión independiente.</p></div>
+  </div>
+  <div class="contenedor final"><span>© <span id="anio"></span> Carradori Hermanas</span><a href="#inicio">Volver arriba ↑</a></div>
+</footer>
+
+<a class="whatsapp" href="#contacto">WhatsApp</a>
+
+<script>
+const boton=document.querySelector(".menu"),nav=document.querySelector("nav");
+boton.addEventListener("click",()=>nav.classList.toggle("abierto"));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("abierto")));
+document.getElementById("anio").textContent=new Date().getFullYear();
+document.getElementById("formulario").addEventListener("submit",e=>{
+ e.preventDefault();
+ e.currentTarget.querySelector(".estado").textContent="El formulario está listo. Falta conectarlo para recibir mensajes.";
+});
+</script>
 </body>
 </html>
