@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://carradorihermanas.github.io/carradori-hermanas-web/sitemap.xml
